@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    background-color: black;
+}
+
+.parent{
+    padding: 10px;
+    display: flex;
+}
+
+.right{
+    color: white;
+    font-size: 1.6em;
+}
+
+.left{
+    font-size: 1.6em;
+    margin-left: 5px;
+    color: red;
+    background-color: white;
+    border-radius: 6px;
+    width: fit-content;
+   font-weight: bold;
+}
+.child{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.content{
+    width: 300px;
+}
+.thumbnail{
+    width: inherit;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    
+}
+.image{
+    border-radius: 500px;
+}
+.text{
+    color: white;
+    margin-left: 20px;
+}

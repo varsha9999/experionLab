@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" tabindex="1" id="target" onkeyup="executeEvent(event)"/>
+    <h1 id="result"></h1>
+    <button onclick="selectTextbox()">select</button> -->
+
+<!-- <div id="button" style="height: 70px; background-color: brown; border-radius: 1000px;"> </div>
+
+<hr>
+<input type="range" min="10" max="100" value="50" onchange="executeEvent(event)" > -->
+
+<!-- <button>click</button>
+<button>click</button>
+<button>click</button>
+<button >click</button> -->
+<!-- <button >click</button> -->
+
+<!-- <div>
+
+    <h1 id="target">Heading</h1>
+    <p>Paragraph</p>
+</div> -->
+
+<table>
+
+
+
+    <thead>
+
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="content"></tbody>
+</table>
+
+
+
+    <script>
+// const target = document.getElementById('target');
+// function selectTextbox(){
+//     target.focus();
+// }
+// function executeEvent(e){
+//     console.log(e);
+// }
+
+// const res = document.getElementById('result');
+// function executeEvent(e){
+//     res.innerText = e.target.value;
+// }
+
+// const btn = document.getElementById('button');
+// function executeEvent(e){
+//     btn.style.width = `${e.target.value}px`;
+// }
+
+// const buttons = document.querySelectorAll('div .btn');
+// buttons.forEach(btn=>{
+//     btn.style.backgroundColor = 'teal';
+// })
+
+// document.querySelectorAll('button').forEach(btn=>{
+//     btn.addEventListener('click',(e)=>{
+//        e.target.innerText = 'clicked'; 
+//     });
+// })
+
+// var tag = document.createElement('h1');
+// tag.innerText = 'H1 Tag ';
+// document.body.appendChild(tag);
+
+// const target = document.querySelector('#target');
+// console.log(target.parentElement);
+
+// const data = '{"name":"Mr. X","age":18,"mark1":10,"mark":9}';
+// const student = JSON.parse(data);
+// console.log(student);
+
+const users = [
+    {
+        name: 'user 1',
+        email: 'user1@gmail.com'
+    },
+    {
+        name: 'user 2',
+        email: 'user2@gmail.com'
+    }
+];
+
+const target = document.getElementById('content');
+users.forEach(user=>{
+    const row = `<tr>
+<td>${user.name}</td>
+<td>${user.email}</td>
+<td><button>Delete</button></td>
+</tr>`;
+target.innerHTML += row;
+ })
+ function deleteRow(){
+
+document.querySelectorAll('button').forEach(event=>{
+
+    event.addEventListener('click', (e)=>{
+
+        // console.log(e.target.parent.parent);
+
+       
+
+        let alert = confirm(`Do you want to delete?`);
+
+   
+
+        if(alert){
+
+            e.target.parentElement.parentElement.remove();
+
+        }
+
+    });
+
+    // event.target.onclick += console.log(event.target.parentElement);
+
+});
+
+}
+
+   
+//  const content = document.querySelector('#content');
+// console.log(target.parentElement);
+
+    </script>
+</body>
+</html>

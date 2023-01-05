@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculate(opreator, res) {
+            var a, b;
+            a = document.getElementById("text1").value;
+            b = document.getElementById("text2").value;
+            var result = eval(a + opreator + b);
+            document.getElementById(text3).value = result;
+            return result;
+        }
+
+        function clear() {
+            document.getElementById("calc").reset();
+        }
+    </script>
+    <form class="calc">
+        <input type="text" id="text1" /><br />
+        <input type="text" id="text2" /><br />
+        <input type="text" id="text3" />
+        <div class="button">
+            <button onclick="calculate('+',text3)">+</button>
+            <button onclick="calculate('-',text3)">-</button><br /><button onclick="calculate('/',text3)">/</button>
+            <button onclick="calculate('*',text3)">X</button>
+        </div>
+        <input type="reset" value="Reset" onclick="clear()" />
+    </form>
+
+
+
+</body>
+
+</html>

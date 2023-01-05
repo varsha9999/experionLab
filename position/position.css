@@ -1,0 +1,67 @@
+*{
+    background-color: white;
+}
+.items{
+    background-color: rgb(39, 17, 17);
+    width: fit-content;
+    font-weight: 20px;
+    font-size: 32px;
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 22px;
+    height: 25px;
+}
+.yak{
+    position: absolute;
+    top: 25px;
+    left: 580px;
+}
+.rhi{
+    position: absolute;
+    top: 10px;
+    left: 1010px;
+}
+.tigero{
+    position: absolute;
+    top: 90px;
+    left: 90px;
+}
+.fox{
+    position: absolute;
+    top: 200px;
+    left: 619px;
+}
+.ele{
+    position: absolute;
+    top:99px ;
+    left: 1000px;
+}
+.lion{
+    position: absolute;
+    top:400px ;
+    left: 50px;
+}
+.gira
+{
+    position: absolute;
+    top: 380px; 
+    left: 160px;
+}
+.leo{
+    position: absolute;
+    top: 440px; 
+    left: 780px; 
+}
+.igua{
+    position: absolute;
+    top: 350px;
+    left: 950px; 
+}
+.tiger{
+    position: absolute;
+    top: 400px;
+    left: 1094px;
+}

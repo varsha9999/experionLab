@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+}
+
+.box{
+background-color: rgb(30, 220, 80);
+flex: 4;
+display: flex;
+}
+.box2{
+    background-color: rgb(30, 154, 220);
+    flex: 2;
+    }
+ .container{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .sec0{
+        margin-top: auto;
+        background-color: white;
+
+        height: 150px;
+
+        width: 200px;
+
+        display: grid;
+
+        grid-template-columns: auto auto auto;
+
+        grid-gap: 30px;
+
+        padding: 20px;
+    }
+    .div1{
+        grid-column: span 3;
+    }
+    .sec2{
+    margin-top: auto;
+
+        margin-left: 90px;
+
+        background-color: white;
+
+        height: 270px;
+
+        width: 200px;
+
+        display: grid;
+
+        grid-template-columns: auto auto auto;
+
+        grid-gap: 20px;
+
+        padding: 20px;
+    }
+    .sec1{
+        background-color: rgb(16, 237, 163);
+
+        border-radius: 20%;
+    }
+    .sec3{
+        margin-left: auto;
+    }

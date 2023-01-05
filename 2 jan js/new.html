@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let data = 'A Message From js';
+        console.log(data);
+    </script> -->
+    
+    <!-- <script>
+        let data1 = 'A Message From js 1';
+        console.log(data);
+    </script> -->
+    <!-- <script>
+        var data ={
+            message:'hello' ,
+            language:'English'
+        };
+        console.log(data);
+        </script> -->
+
+
+    <!-- // console.log('This is message.');
+    // console.info('login was successful.');
+    // console.error('an error occured.');
+    // console.warn('This is message.');
+    // console.table(['one.']);
+    // console.time('This is message.'); -->
+    <p id="p1" onclick="handleClick(event)">This is a paragraph.</p>
+    <button onclick="handleClick(event)">Click Me</button>
+    <button onclick="handleClick(event)">Click Me</button>
+
+    <!-- <p id="p1">my paragraph</p> -->
+    <p>my paragraph2</p>
+    <input  id="test" type="checkbox"> select this <br>
+    <input type="text" id="email" value="BBBBB"><br>
+    
+    <script>
+// var e = document.getElementsByTagName('p');
+// for (let i = 0; i < e.length;i++){
+//     const element = e[i];
+//     element.style.display = none;
+// }
+// document.getElementById('p1').removeAttribute('style')
+// document.getElementById('test').setAttribute('checked','checked');
+// document.getElementById('email').setAttribute('value','mw@gmail.com');
+let res = document.getElementById('email').getAttribute('type');
+document.write(res);
+    </script>
+    <script>
+        function handleClick(e)
+         // console.log('button clicked');
+            // alert('button clicked');
+           
+        {
+console.log(e);
+e.target.innerText = 'Clicked';
+e.target.style.color = 'green';
+        }
+    </script>
+
+    <!-- <script> -->
+    <!-- //    alert('this is an alert from js');
+    // let option = confirm('do you want to log out?');
+    // console.log(option);
+    // if(option){
+    //     console.log('user logged out successfully.');
+    // }
+
+
+    // const name = prompt('Enter your name:');
+    // console.log('you are',name);
+
+    // document.write('<h1> Hello world</h1>');
+    const element = document.getElementById('p1');
+    // console.log(element);
+    // element.innerText = 'NEW TEXT';
+    // console.log(element.innerText);
+    // element.style.color = 'red'; -->
+
+    <!-- </script> -->
+    <!-- <script>
+let e = document.getElementById('p1');
+e.style.color = 'blue';
+e.style.fontSize = '25px';
+e.style.textAlign = 'center';
+e.style.fontWeight = 'bold';
+
+
+
+    </script> -->
+
+
+</body>
+</html>

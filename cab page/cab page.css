@@ -1,0 +1,128 @@
+
+body{
+    
+ margin: 0;
+    color: white;
+    background: url("https://cabbazar.com/assets/img/background/main.jpg");
+    
+}
+header{
+    min-height: 70px;
+    background-color: #2f2f2f;
+    position: sticky;
+    top: 0;
+    padding: 0 20px;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 5px #989898;
+}
+h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2cm;
+    top: 120px;
+    left:320px;
+}
+
+.home2{   
+    width: 259px;
+    background-color: rgba(67, 77, 91, 0.835);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    border-radius: 9px;
+    height: 5vh;
+}
+.home3{
+    margin: 10px;
+    height: 5vh;
+    width: 259px; 
+    background-color: rgba(67, 77, 91, 0.835);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    border-radius: 9px;
+    
+    
+}
+.home4{
+    height: 80vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:top;
+    
+    
+}
+.home5{
+   background:  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='.home5' color='red' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+   text-align:left;
+    color: brown;
+    height: 1vh;
+    margin:50px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    width: 700px;
+    float: left;
+    padding: 8px;
+    
+}
+::placeholder{
+    color: rgb(73, 10, 10);
+    padding: 45px;
+}
+.logo{
+    font-size: 1.4em;
+}
+#main-nav{
+    margin-left: auto;
+    /*margin-right: auto;*/
+}
+#main-nav>a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+.login{
+    background-color: dodgerblue;
+    padding: 8px;
+    border-radius: 5px;
+}
+#mobile-nav{
+    display: none;
+}
+#mobile-nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+@media screen and (max-width: 500px){
+    #main-nav{
+        display: none;
+    }
+    #mobile-nav{
+        display: block;
+    }
+    #mobile-nav a{
+        padding: 10px 5px;
+        border-bottom: 1px solid white;
+    }
+    header{
+        flex-direction: column;
+        align-items: initial;
+    }
+    .logo{
+        margin: 25px 0;
+    }
+    #mobile-nav{
+        padding-bottom: 10px;
+    }
+}
+
+
+
