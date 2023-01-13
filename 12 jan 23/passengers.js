@@ -66,4 +66,4 @@ for(let i = 0; i < passenger.length; i++){
         }
     }
 }
-// 2nd question
+// 2nd question 
