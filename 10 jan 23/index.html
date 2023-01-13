@@ -11,47 +11,42 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-  
-  <div style="background-color: rgb(12, 175, 0);">Email
-    <input type="text" id="inputBox" style="width: 500px; background-color: rgb(165, 138, 138); ">
-  </div>
-  <table class="table table-dark table-striped table-hover">
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Avatar</th>
-        <th>Name</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody id="target">
-    </tbody>
-  </table>
-  <script>
-        // const http = new XMLHttpRequest();
-        // http.onreadystatechange = function()
-        // {
-        //     if(this.readyState == 4 && this.status == 200){
-        //         console.log(this.responseText);
-        //     }
-        // }
-        // http.open('GET','https://reqres.in/api/users/2');
-        // http.send();
-        // console.log('COMPLETED');
+    
+    <div>
+        <p id="paragraph1"></p>
+    <button class="btn btn-danger"  onclick="display(event)" id="button1">CLICK </button>
+</div>
+<div>
+    <p id="nam"></p>
+    <label for="">male</label>
+    <input type="radio" value="male" name="rad" id="rad" onchange="changeval(event)"> 
+    <label for="">female</label>
+    <input type="radio" value="female" name="rad" id="rad" onchange="changeval(event)">
+</div>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
 
-  </script>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
-  <script src="scripts/app.js"></script>
+  </script>
+  <script src="./index.js">
+    
+  </script>
 </body>
 
 </html>
