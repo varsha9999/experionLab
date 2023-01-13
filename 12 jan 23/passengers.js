@@ -67,3 +67,23 @@ for(let i = 0; i < passenger.length; i++){
     }
 }
 // 2nd question 
+const flight_fare = 2000;
+const booking_time = 7;
+
+if(booking_time >6 && booking_time <9){
+   let fare = ((flight_fare*10)/100)+flight_fare;
+   console.log(fare);
+}
+else if (booking_time > 9 && booking_time < 17){
+   let fare = ((flight_fare*20)/100)+flight_fare;
+   console.log(fare);
+}
+else if (booking_time > 17 && booking_time < 23){
+    let fare = ((flight_fare*7)/100)+flight_fare;
+    console.log(fare);
+ }
+ else 
+ {
+    let fare = ((flight_fare*5)/100)+flight_fare;
+    console.log(fare);
+ }
